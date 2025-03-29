@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kpop Merch Shop - Productos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            font-size: 16px;
+        }
+
+        header {
+            background: url('fts/e684ba19-af00-4c61-91ef-b978c3e5bdac.png') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        nav {
+            background-color: #ff4081;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            background-color: #ff79b0;
+        }
+
+        .products-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 2rem;
+        }
+
+        .products-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        /* Usando Grid para mostrar los productos */
+        .product-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        .product-card p {
+            color: #777;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-card button {
+            background-color: #ff4081;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background-color: #ff79b0;
+        }
+
+        .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            font-size: 1rem;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 1024px) {
+            .product-cards {
+                grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-cards {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-cards {
+                grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kpop Merch Shop</h1>
+        <p>Explora nuestros productos disponibles.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contactar</a>
+    </nav>
+
+    <section class="products-section">
+        <h2>Productos Disponibles</h2>
+        <div class="product-cards">
+            <!-- Primeros 4 productos -->
+            <div class="product-card">
+                <img src="fts/b1.jpg" alt="Camiseta BTS">
+                <h3>Camiseta BTS</h3>
+               
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/ps.jpg" alt="Poster BLACKPINK">
+                <h3>Poster BLACKPINK</h3>
+                
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/e.jpg" alt="Album EXO">
+                <h3>Álbum EXO</h3>
+            
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/SKZO.png" alt="Camiseta BLACKPINK">
+                <h3>STRAY KIDS SKZOO – “SKZ 5’CLOCK” (SKZOO PLUSH 10CM Ver.)</h3>
+                <p></p>
+                <button>Agregar al carrito</button>
+            </div>
+    
+            <!-- Nuevos productos agregados -->
+            <div class="product-card">
+                <img src="fts/st.jpg" alt="Album BTS">
+                <h3>TWICE – “STRATEGY”</h3>
+                <p></p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/nw.jpg" alt="Poster EXO">
+                <h3>New Jeans – Light Stick</h3>
+                
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/it.jpg" alt="Camiseta TWICE">
+                <h3>ITZY – Light Ring </h3>
+              
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/j.jpg" alt="Album BLACKPINK">
+                <h3>JUNGKOOK – “GOLDEN”</h3>
+               
+                <button>Agregar al carrito</button>
+            </div>
+            
+            <!-- Puedes seguir agregando más productos de esta manera -->
+            <div class="product-card">
+                <img src="fts/M.jpg" alt="MONSTA X MINHYUK – “Reason” POB Soundwave Ronda 2">
+                <h3>MONSTA X MINHYUK – “Reason” POB Soundwave Ronda </h3>
+                <p></p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/sk.jpg" alt="Album BLACKPINK">
+                <h3>STRAY KIDS – “HOP”</h3>
+                
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/lb.png" alt="Album BLACKPINK">
+                <h3>BlackPink – Light Stick Ver. 2</h3>
+              
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/cb.jpg" alt="Album BLACKPINK">
+                <h3>TWICE – Candy Bong Z</h3>
+              
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/5.jpg" alt="Album BLACKPINK">
+                <h3>STRAY KIDS – “5 STAR” Ver. LIMITED</h3>
+              
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/1.jpg" alt="Album BLACKPINK">
+                <h3>(G)I-DLE – “I FEEL”</h3>
+               
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/txt.jpg" alt="Album BLACKPINK">
+                <h3>TXT – “THE NAME CHAPTER: FREEFALL” Ver. WEVERSE</h3>
+                
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="fts/bts.jpg" alt="Album BLACKPINK">
+                <h3>BTS – “LOVE YOUR SELF : HER”</h3>
+              
+                <button>Agregar al carrito</button>
+            
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <p>&copy; 2025 Kpop Merch Shop | Todos los derechos reservados</p>
+        <p>¡Síguenos en nuestras redes sociales!</p>
+    </footer>
+
+</body>
+</html>
